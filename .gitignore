@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Environment files
+.env
+.env.local
+
+# Docker volumes
+docker/postgres_data/
+docker/n8n_data/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
