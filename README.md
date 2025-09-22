@@ -26,7 +26,7 @@ Este projeto foi desenvolvido como parte do processo seletivo da Onfly. O conect
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/SEU_USUARIO/n8n-random-node.git
+git clone https://github.com/ArthurFialho/n8n-random-number-generator-onfly.git
 cd n8n-random-node
 ```
 
@@ -77,25 +77,8 @@ Abra seu navegador e acesse: **http://localhost:5678**
 5. **Execute o workflow** clicando no botão "Execute Workflow"
 6. **Visualize o resultado** no painel de saída
 
-## 📁 Estrutura do Projeto
-
-```
-n8n-random-node/
-├── custom-nodes/
-│   └── n8n-nodes-random/
-│       ├── nodes/
-│       │   └── Random/
-│       │       ├── Random.node.ts    # Implementação principal do node
-│       │       └── random.svg        # Ícone personalizado
-│       ├── dist/                     # Arquivos compilados (gerados pelo build)
-│       ├── package.json              # Configurações do npm e dependências
-│       ├── tsconfig.json            # Configurações do TypeScript
-│       └── index.ts                 # Ponto de entrada do módulo
-├── docker/
-│   └── docker-compose.yml          # Configuração do Docker (n8n + PostgreSQL)
-├── .gitignore                       # Arquivos ignorados pelo Git
-└── README.md                        # Este arquivo
-```
+## 📁 Diagrama do Projeto
+<img width="3840" height="2619" alt="diagrama-teste-n8n-onfly _ Mermaid Chart-2025-09-22-212248" src="https://github.com/user-attachments/assets/654d1915-cd0b-4017-9438-546dc2ac3675" />
 
 ### Variáveis de Ambiente (Docker)
 
@@ -228,11 +211,5 @@ docker-compose down -v
 - Utiliza `IExecuteFunctions` para acessar parâmetros e fazer requisições HTTP
 - Inclui tratamento de erros e validação de entrada
 - Segue as melhores práticas de desenvolvimento de nodes personalizados do n8n
-
-## 📞 Suporte
-
-Em caso de dúvidas sobre o processo seletivo, entre em contato com o time da Onfly através do email fornecido no teste.
-
----
 
 **Desenvolvido para o processo seletivo Recruta Onfly - Etapa 3: Teste Técnico**
