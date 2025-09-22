@@ -1,0 +1,28 @@
+{
+  "name": "n8n-nodes-random",
+  "version": "1.0.0",
+  "description": "Custom n8n node for generating true random numbers using Random.org",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "n8n": {
+    "nodes": [
+      "dist/nodes/Random/Random.node.js"
+    ]
+  },
+  "keywords": [
+    "n8n",
+    "nodes",
+    "random"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "n8n-workflow": "^1.0.0"
+  }
+}
