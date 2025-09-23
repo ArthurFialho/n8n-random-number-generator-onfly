@@ -108,7 +108,7 @@ O ambiente Docker está configurado com as seguintes variáveis:
 ## 🧪 Testes com Jest
 
 Este projeto utiliza **Jest** para testes automatizados.  
-Os testes foram configurados para **não depender da API externa real (random.org)**, garantindo estabilidade mesmo sem internet ou em caso de indisponibilidade da API.
+Os testes foram configurados com dois unitários e um te integração real (random.org)\*\*, garantindo estabilidade mesmo sem internet ou em caso de indisponibilidade da API.
 
 ### Rodar os testes
 
