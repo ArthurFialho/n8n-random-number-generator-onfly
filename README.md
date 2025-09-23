@@ -27,7 +27,7 @@ Este projeto/teste técnico foi desenvolvido como parte do processo seletivo da 
 
 ```bash
 git clone https://github.com/ArthurFialho/n8n-random-number-generator-onfly.git
-cd n8n-random-node
+cd n8n-random-number-generator-onfly
 ```
 
 ### 2. Instalar dependências do custom node
@@ -44,6 +44,12 @@ npm run build
 ```
 
 ### 4. Configurar e executar o ambiente Docker
+
+Crie um arquivo .env na raiz do projeto e adicione:
+POSTGRES_DB=n8n
+POSTGRES_USER=n8n
+POSTGRES_PASSWORD=n8n
+Isso não é 100% necessário, mas facilita e organiza a configuração
 
 ```bash
 cd ../../docker
@@ -105,15 +111,20 @@ O ambiente Docker está configurado com as seguintes variáveis:
 
 ## 🧪 Executar Testes
 
-## 🧪 Testes com Jest
+## 🧪 Testes Automatizados com Jest
 
 Este projeto utiliza **Jest** para testes automatizados.  
-Os testes foram configurados com dois unitários e um te integração real (random.org)\*\*, garantindo estabilidade mesmo sem internet ou em caso de indisponibilidade da API.
+Os testes incluem:
+
+- Unitários para verificar a lógica do node.
+- Integração simulada com a API Random.org (mock), garantindo que os testes não dependam da internet.
 
 ### Rodar os testes
 
 ```bash
+cd custom-nodes/n8n-nodes-random
 npm run test
+
 
 
 ### Teste Manual no n8n
