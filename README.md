@@ -46,9 +46,11 @@ npm run build
 ### 4. Configurar e executar o ambiente Docker
 
 Crie um arquivo .env na raiz do projeto e adicione:
+```bash
 POSTGRES_DB=n8n
 POSTGRES_USER=n8n
 POSTGRES_PASSWORD=n8n
+```
 Isso não é 100% necessário, mas facilita e organiza a configuração
 
 ```bash
