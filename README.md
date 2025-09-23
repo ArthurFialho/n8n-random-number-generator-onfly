@@ -105,6 +105,17 @@ O ambiente Docker está configurado com as seguintes variáveis:
 
 ## 🧪 Executar Testes
 
+## 🧪 Testes com Jest
+
+Este projeto utiliza **Jest** para testes automatizados.  
+Os testes foram configurados para **não depender da API externa real (random.org)**, garantindo estabilidade mesmo sem internet ou em caso de indisponibilidade da API.
+
+### Rodar os testes
+
+```bash
+npm run test
+
+
 ### Teste Manual no n8n
 
 1. Acesse http://localhost:5678
@@ -118,8 +129,10 @@ O ambiente Docker está configurado com as seguintes variáveis:
 O node utiliza este endpoint específico conforme solicitado:
 
 ```
+
 https://www.random.org/integers/?num=1&min={MIN}&max={MAX}&col=1&base=10&format=plain&rnd=new
-```
+
+````
 
 ### Verificar Logs
 
@@ -129,7 +142,7 @@ docker-compose logs n8n
 
 # Ver logs em tempo real
 docker-compose logs -f n8n
-```
+````
 
 ## 🔄 Desenvolvimento e Debugging
 
