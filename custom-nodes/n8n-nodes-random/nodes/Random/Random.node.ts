@@ -84,6 +84,13 @@ export class Random implements INodeType {
             );
           }
 
+          if (!Number.isInteger(min) || !Number.isInteger(max)) {
+            throw new NodeOperationError(
+              this.getNode(),
+              "Min and Max must be integers"
+            );
+          }
+
           const url = `https://www.random.org/integers/?num=1&min=${min}&max=${max}&col=1&base=10&format=plain&rnd=new`;
 
           const response = await this.helpers.request({
