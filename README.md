@@ -78,6 +78,7 @@ Abra seu navegador e acesse: **http://localhost:5678**
 6. **Visualize o resultado** no painel de saída
 
 ## 📁 Diagrama do Projeto
+
 <img width="3840" height="2619" alt="diagrama-teste-n8n-onfly _ Mermaid Chart-2025-09-22-212248" src="https://github.com/user-attachments/assets/654d1915-cd0b-4017-9438-546dc2ac3675" />
 
 ### Variáveis de Ambiente (Docker)
