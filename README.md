@@ -43,6 +43,8 @@ npm install
 npm run build
 ```
 
+Isso, criará a pasta /dist no projeto.
+
 ### 4. Configurar e executar o ambiente Docker
 
 Crie um arquivo .env na raiz do projeto e adicione:
