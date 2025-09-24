@@ -1,6 +1,6 @@
-# N8N Custom Random Number Generator Node :: ARTHUR FERNANDES FIALHO & SILVA
+## N8N Custom Random Number Generator Node :: ARTHUR FERNANDES FIALHO & SILVA
 
-Um conector personalizado para n8n que gera números aleatórios verdadeiros usando a API Random.org.
+<img width="3840" height="2619" alt="onfly-img" src="https://www.onfly.com.br/wp-content/uploads/2024/07/onfly-logo-azul-01-768x307-1.webp" />
 
 ## 📋 Sobre o Projeto
 
